@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 void main() {
   String? name;
@@ -6,6 +8,18 @@ void main() {
   name ??= 'Guest';
 
   runApp(const MyApp());
+
+  clairesFirebaseInitializer();
+}
+
+void clairesFirebaseInitializer() async {
+  print('Claires ASYNC Fire Init launched');
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  print('Claires ASYNC Fire Init ending');
 }
 
 class MyApp extends StatelessWidget {
