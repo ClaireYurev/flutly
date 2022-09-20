@@ -1,8 +1,9 @@
-import 'package:flutly/theme.dart';
-import 'package:flutly/routes.dart';
-import 'package:flutter/material.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'package:flutter/material.dart';
+import 'package:flutly/theme.dart';
+import 'package:flutly/routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,6 +43,7 @@ class _AppState extends State<App> {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
+          FirebaseAnalytics.instance;
           return MaterialApp(
             routes: appRoutes,
             theme: appTheme,
