@@ -11,12 +11,14 @@ class ProfileScreen extends StatelessWidget {
         title: Text('Profile'),
       ),
       body: ElevatedButton(
-          child: Text('signout'),
+          child: Text('Sign Out'),
           onPressed: () async {
             await AuthService().signOut();
             Navigator.of(context)
                 .pushNamedAndRemoveUntil('/', (route) => false);
-          }),
+          }
+          /* onPressed: () => throw Exception(),*/
+          ),
     );
   }
 }
