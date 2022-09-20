@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutly/shared/bottom_nav.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-            child: const Text('aboot'),
-            onPressed: () => Navigator.pushNamed(context, '/about')),
-      ),
+    return const Scaffold(
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }
