@@ -1,3 +1,4 @@
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -43,7 +44,7 @@ class _AppState extends State<App> {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          FirebaseAnalytics.instance;
+          initializeFirebaseLytics();
           return MaterialApp(
             routes: appRoutes,
             theme: appTheme,
@@ -55,4 +56,9 @@ class _AppState extends State<App> {
       },
     );
   }
+}
+
+Future<void> initializeFirebaseLytics() async {
+  FirebaseAnalytics.instance;
+  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
 }
