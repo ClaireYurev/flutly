@@ -67,6 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '366066709229',
     projectId: 'flutly-firebase',
     storageBucket: 'flutly-firebase.appspot.com',
+    androidClientId: '366066709229-19cj2iko20bj2nt5dq4k7gfho9dkvpan.apps.googleusercontent.com',
     iosClientId: '366066709229-lq9kd5q82bn3blhf1rb8qbv0a4kl1ibb.apps.googleusercontent.com',
     iosBundleId: 'io.github.flutly',
   );
@@ -77,6 +78,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '366066709229',
     projectId: 'flutly-firebase',
     storageBucket: 'flutly-firebase.appspot.com',
+    androidClientId: '366066709229-19cj2iko20bj2nt5dq4k7gfho9dkvpan.apps.googleusercontent.com',
     iosClientId: '366066709229-lq9kd5q82bn3blhf1rb8qbv0a4kl1ibb.apps.googleusercontent.com',
     iosBundleId: 'io.github.flutly',
   );

@@ -13,13 +13,9 @@ void main() {
 }
 
 void clairesFirebaseInitializer() async {
-  print('Claires ASYNC Fire Init launched');
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
-  print('Claires ASYNC Fire Init ending');
 }
 
 class MyApp extends StatelessWidget {
