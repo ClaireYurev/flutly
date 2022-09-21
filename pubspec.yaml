@@ -44,7 +44,7 @@ dependencies:
   font_awesome_flutter: 10.2.1
   google_fonts: 3.0.1
   firebase_crashlytics: ^2.8.10
-  # provider: 6.0.3
+  provider: 6.0.3
   rxdart: 0.27.5
   json_annotation: 4.7.0
 
@@ -60,8 +60,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - assets/
-  #   - assets/covers/
-  #   - assets/congrats.gif
+  assets:
+    - assets/
+    - assets/covers/
+    - assets/congrats.gif
+    - assets/logo.png
+    - assets/user.png
